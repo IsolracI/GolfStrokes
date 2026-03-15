@@ -73,38 +73,38 @@ public class App {
         scoreCard.setPlayerA(playerA);
         scoreCard.setPlayerB(playerB);
         scoreCard.setPlayersCourse(augusta);
-//
-//        /*
-//         * Calcula el total strokes de los jugadores
-//         * en la modalidad stroke play.
-//         * Crea la modalidad de juego StrokePlay.
-//         * En esta modalidad el total de strokes
-//         * de un jugador es la suma total de golpes
-//         * de su recorrido.
-//         * Implementa el patron strategy.
-//         * Crea la clase ComputeCard que reciba la tarjeta
-//         * y la modalidad o estrategia de juego y calcule
-//         * el total de strokes de cada jugador.
-//         * Toda la lógica se encuentra en la clase StrokePlay.
-//         */
-//        GolfPlay strokePlay = new StrokePlay();
-//        ComputeCard computeStrokePlay = new ComputeCard(scoreCard, strokePlay);
-//
-//        /*
-//         * Guarda en la tarjeta el total de strokes
-//         * de cada jugador.
-//         */
-//        computeStrokePlay.compute();
-//        /*
-//         * Muestra por CLI iniciales, strokes y stableford points (0)
-//         * de cada jugador.
-//         */
-//        System.out.println("\n\t ##### STROKE PLAY #####");
-//        System.out.println(playerA);
-//        System.out.println("\nCourse A:\s" + Arrays.toString(scoreCard.getPlayerCourse(playerA)));
-//        System.out.println(playerB);
-//        System.out.println("\nCourse B:\s" + Arrays.toString(scoreCard.getPlayerCourse(playerB)));
-//
+
+        /*
+         * Calcula el total strokes de los jugadores
+         * en la modalidad stroke play.
+         * Crea la modalidad de juego StrokePlay.
+         * En esta modalidad el total de strokes
+         * de un jugador es la suma total de golpes
+         * de su recorrido.
+         * Implementa el patron strategy.
+         * Crea la clase ComputeCard que reciba la tarjeta
+         * y la modalidad o estrategia de juego y calcule
+         * el total de strokes de cada jugador.
+         * Toda la lógica se encuentra en la clase StrokePlay.
+         */
+        GolfPlay strokePlay = new StrokePlay();
+        ComputeCard computeStrokePlay = new ComputeCard(scoreCard, strokePlay);
+
+        /*
+         * Guarda en la tarjeta el total de strokes
+         * de cada jugador.
+         */
+        computeStrokePlay.compute();
+        /*
+         * Muestra por CLI iniciales, strokes y stableford points (0)
+         * de cada jugador.
+         */
+        System.out.println("\n\t ##### STROKE PLAY #####");
+        System.out.println(playerA);
+        System.out.println("\nCourse A:\s" + Arrays.toString(scoreCard.getPlayerCourse(playerA)) + "\n");
+        System.out.println(playerB);
+        System.out.println("\nCourse B:\s" + Arrays.toString(scoreCard.getPlayerCourse(playerB)) + "\n");
+
 //
 //        /*
 //         * Crea la colección de hoyos

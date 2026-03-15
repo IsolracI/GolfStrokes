@@ -41,6 +41,6 @@ public class Player {
 
     @Override
     public String toString() {
-        return getInitials() + "---> Handicap: " + getHandicap() + " Scores: " + getScore() + " Points: " + getPoints();
+        return getInitials() + "---> Handicap: " + getHandicap() + " Scores: " + getScore() + " Stableford points: " + getPoints();
     }
 }
