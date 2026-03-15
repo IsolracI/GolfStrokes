@@ -1,8 +1,8 @@
 package edu.teamRocket;
 
 class Hole {
-    private Byte number;
-    private Byte par;
+    private final Byte number;
+    private final Byte par;
 
     Hole(Byte number, Byte par) {
         this.number = number;
@@ -15,5 +15,10 @@ class Hole {
 
     Byte getPar() {
         return this.par;
+    }
+
+    @Override
+    public String toString() {
+        return "   " + getNumber() + " - " + getPar();
     }
 }

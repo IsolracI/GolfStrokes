@@ -105,22 +105,22 @@ public class App {
         System.out.println(playerB);
         System.out.println("\nCourse B:\s" + Arrays.toString(scoreCard.getPlayerCourse(playerB)) + "\n");
 
-//
-//        /*
-//         * Crea la colección de hoyos
-//         * y añadelos a la tarjeta.
-//         * Para cada hoyo se indica su par.
-//         */
-//        Byte[] whiteYardsPar = {4, 5, 3, 4, 4, 4, 4, 3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4}; // 71
-//        scoreCard.addHoles(whiteYardsPar);
-//        /*
-//         * Muesta en CLI el total de hoyos de la tarjeta.
-//         */
-//        System.out.println("\n\t ##### HOYOS #####");
-//        System.out.println("\nNumero de hoyos: " + scoreCard.getNumHoles()); // 18
-//        System.out.println("\nhole - par");
-//        scoreCard.getHoles().forEach(System.out::println);
-//
+
+        /*
+         * Crea la colección de hoyos
+         * y añadelos a la tarjeta.
+         * Para cada hoyo se indica su par.
+         */
+        Byte[] whiteYardsPar = {4, 5, 3, 4, 4, 4, 4, 3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4}; // 71
+        scoreCard.addHoles(whiteYardsPar);
+        /*
+         * Muesta en CLI el total de hoyos de la tarjeta.
+         */
+        System.out.println("\n\t ##### HOYOS #####");
+        System.out.println("\nNumero de hoyos: " + scoreCard.getNumHoles()); // 18
+        System.out.println("\nhole - par");
+        scoreCard.getHoles().forEach(System.out::println);
+
 //        /*
 //         *
 //         * Crea un tipo enumerado para el sistema Stableford.
