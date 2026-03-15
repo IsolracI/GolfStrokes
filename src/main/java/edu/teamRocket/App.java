@@ -163,28 +163,28 @@ public class App {
         System.out.println("\n\t ##### STABLEFORD POINTS  #####");
         System.out.println(playerA); // points: 0
         System.out.println(playerB); // points: -2
-//
-//        /*
-//         * Crea el jugador C y añadelo a la tarjeta.
-//         */
-//
-//        Byte[] coursePlayerC = {2, 2, 2, 4, 5, 6, 7, 3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4}; // 71 strokes, 8 points
-//        Player playerC = new Player("Meeseeks", (byte) 0);
-//        scoreCard.setPlayerC(playerC);
-//
-//        /* Añade su recorrido a Course.
-//         * Reutiliza la clase Course.
-//         */
-//        augusta.addPlayerCourse(playerC, coursePlayerC);
-//
-//        /*
-//         * Calcula su total de strokes segun la modalidad Stroke Play
-//         * y sus puntos según la modalidad Stableford.
-//         * Muestra el jugador por consola.
-//         */
-//        computeStrokePlay.compute();
-//        computeStableford.compute();
-//
-//        System.out.println(playerC); // total points: 8
+
+        /*
+         * Crea el jugador C y añadelo a la tarjeta.
+         */
+
+        Byte[] coursePlayerC = {2, 2, 2, 4, 5, 6, 7, 3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4}; // 71 strokes, 8 points
+        Player playerC = new Player("Meeseeks", (byte) 0);
+        scoreCard.setPlayerC(playerC);
+
+        /* Añade su recorrido a Course.
+         * Reutiliza la clase Course.
+         */
+        augusta.addPlayerCourse(playerC, coursePlayerC);
+
+        /*
+         * Calcula su total de strokes según la modalidad Stroke Play
+         * y sus puntos según la modalidad Stableford.
+         * Muestra el jugador por consola.
+         */
+        computeStrokePlay.compute();
+        computeStableford.compute();
+
+        System.out.println(playerC); // total points: 8
     }
 }
