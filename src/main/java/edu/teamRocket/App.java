@@ -143,26 +143,26 @@ public class App {
         System.out.println();
         List.of(StablefordSystem.values()).forEach(System.out::println);
 
-//        /*
-//         * Calcula los puntos que obtienen los jugadores A y B
-//         * en la modalidad Stableford.
-//         * Implementa el patron strategy.
-//         * Crea la modalidad de juego Stableford.
-//         * La clase ComputeCard recibe la tarjeta
-//         * y la modalidad o estrategia de juego StableFordPlay
-//         * y calcula los puntos de cada jugador.
-//         * Toda la lógica se encuentra en la clase Stableford.
-//         */
-//        GolfPlay stablefordPlay = new Stableford();
-//        ComputeCard computeStableford = new ComputeCard(scoreCard, stablefordPlay);
-//        computeStableford.compute();
-//        /*
-//         * Muestra en CLI los puntos totales
-//         * de los jugadores A y B
-//         */
-//        System.out.println("\n\t ##### STABLEFORD POINTS  #####");
-//        System.out.println(playerA); // points: 0
-//        System.out.println(playerB); // points: -2
+        /*
+         * Calcula los puntos que obtienen los jugadores A y B
+         * en la modalidad Stableford.
+         * Implementa el patron strategy.
+         * Crea la modalidad de juego Stableford.
+         * La clase ComputeCard recibe la tarjeta
+         * y la modalidad o estrategia de juego StableFordPlay
+         * y calcula los puntos de cada jugador.
+         * Toda la lógica se encuentra en la clase Stableford.
+         */
+        GolfPlay stablefordPlay = new Stableford();
+        ComputeCard computeStableford = new ComputeCard(scoreCard, stablefordPlay);
+        computeStableford.compute();
+        /*
+         * Muestra en CLI los puntos totales
+         * de los jugadores A y B
+         */
+        System.out.println("\n\t ##### STABLEFORD POINTS  #####");
+        System.out.println(playerA); // points: 0
+        System.out.println(playerB); // points: -2
 //
 //        /*
 //         * Crea el jugador C y añadelo a la tarjeta.

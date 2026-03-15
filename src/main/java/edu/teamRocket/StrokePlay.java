@@ -11,8 +11,8 @@ public class StrokePlay implements GolfPlay {
         for (Player player : players) {
             byte[] playerCourse = scoreCard.getPlayerCourse(player);
             short playerScore = 0;
-            for (byte b : playerCourse) {
-                playerScore += b;
+            for (byte strokes : playerCourse) {
+                playerScore += strokes;
             }
             player.setScore(playerScore);
         }
