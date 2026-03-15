@@ -54,25 +54,25 @@ public class App {
         Byte[] coursePlayerA = {4, 5, 3, 4, 4, 4, 4, 3, 5, 5, 4, 4, 3, 4, 4, 3, 4, 4}; // 71
         Player playerA = new Player("MJ", (byte) 0);
         augusta.addPlayerCourse(playerA, coursePlayerA);
-//
-//        /*
-//         * Crea el jugador/a B.
-//         * Reutiliza la clase Course para añadir el registro de recorrido
-//         * del jugador B con sus golpes en cada hoyo.
-//         */
-//        Byte[] coursePlayerB = {4, 5, 3, 4, 4, 4, 5, 3, 5, 5, 4, 4, 3, 5, 4, 3, 4, 4}; // 73
-//        Player playerB = new Player("JS", (byte) 0);
-//        augusta.addPlayerCourse(playerB, coursePlayerB);
-//
-//        /*
-//         * Crea la clase ScoreCard
-//         * y añade a la tarjeta los jugadores A y B
-//         * Establece en la tarjeta el Course "Augusta".
-//         */
-//        ScoreCard scoreCard = new ScoreCard();
-//        scoreCard.setPlayerA(playerA);
-//        scoreCard.setPlayerB(playerB);
-//        scoreCard.setPlayersCourse(augusta);
+
+        /*
+         * Crea el jugador/a B.
+         * Reutiliza la clase Course para añadir el registro de recorrido
+         * del jugador B con sus golpes en cada hoyo.
+         */
+        Byte[] coursePlayerB = {4, 5, 3, 4, 4, 4, 5, 3, 5, 5, 4, 4, 3, 5, 4, 3, 4, 4}; // 73
+        Player playerB = new Player("JS", (byte) 0);
+        augusta.addPlayerCourse(playerB, coursePlayerB);
+
+        /*
+         * Crea la clase ScoreCard
+         * y añade a la tarjeta los jugadores A y B
+         * Establece en la tarjeta el Course "Augusta".
+         */
+        ScoreCard scoreCard = new ScoreCard();
+        scoreCard.setPlayerA(playerA);
+        scoreCard.setPlayerB(playerB);
+        scoreCard.setPlayersCourse(augusta);
 //
 //        /*
 //         * Calcula el total strokes de los jugadores
