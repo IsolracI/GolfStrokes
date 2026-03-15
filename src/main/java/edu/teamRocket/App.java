@@ -121,28 +121,28 @@ public class App {
         System.out.println("\nhole - par");
         scoreCard.getHoles().forEach(System.out::println);
 
-//        /*
-//         *
-//         * Crea un tipo enumerado para el sistema Stableford.
-//         *
-//         * Los valores del enumerado representan los diferentes resultados
-//         * posibles en golf con sus puntos correspondientes en el sistema Stableford:
-//         *
-//         * DOUBLE_BOGEY: -3 puntos, 2 o más golpes sobre par
-//         * BOGEY: -1 punto, 1 sobre par
-//         * PAR: 0 puntos
-//         * BIRDIE: 2 puntos, 1 bajo par
-//         * EAGLE: 5 puntos, 2 bajo par
-//         * ALBATROSS: 8 puntos, 3 bajo par
-//         *
-//         * En este sistema, gana el jugador que sume mas puntos.
-//         */
-//        System.out.println("\n\t ##### STABLEFORD SYSTEM #####");
-//        System.out.println("\nBirdie: " + StablefordSystem.BIRDIE.getPoints()); // 2
-//        System.out.println("Eagle: " + StablefordSystem.BOGEY.getPoints());  // -1
-//        System.out.println();
-//        List.of(StablefordSystem.values()).forEach(System.out::println);
-//
+        /*
+         *
+         * Crea un tipo enumerado para el sistema Stableford.
+         *
+         * Los valores del enumerado representan los diferentes resultados
+         * posibles en golf con sus puntos correspondientes en el sistema Stableford:
+         *
+         * DOUBLE_BOGEY: -3 puntos, 2 o más golpes sobre par
+         * BOGEY: -1 punto, 1 sobre par
+         * PAR: 0 puntos
+         * BIRDIE: 2 puntos, 1 bajo par
+         * EAGLE: 5 puntos, 2 bajo par
+         * ALBATROSS: 8 puntos, 3 bajo par
+         *
+         * En este sistema, gana el jugador que sume más puntos.
+         */
+        System.out.println("\n\t ##### STABLEFORD SYSTEM #####");
+        System.out.println("\nBirdie: " + StablefordSystem.BIRDIE.getPoints()); // 2
+        System.out.println("Eagle: " + StablefordSystem.BOGEY.getPoints());  // -1
+        System.out.println();
+        List.of(StablefordSystem.values()).forEach(System.out::println);
+
 //        /*
 //         * Calcula los puntos que obtienen los jugadores A y B
 //         * en la modalidad Stableford.
