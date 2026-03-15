@@ -1,6 +1,6 @@
 package edu.teamRocket;
 
-class Player {
+public class Player {
     private final String INITIALS;
     private Byte handicap;
     private short score = 0;
